@@ -6,6 +6,13 @@
     <title></title>
 </head>
 <body>
-    <script type="text/javascript">alert($) </script>
+    <button type="button">Click me</button>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(this).hide();
+            });
+        });
+        </script>
 </body>
 </html>
