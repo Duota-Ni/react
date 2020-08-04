@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算属性的基本使用</title>
+    <script src="../vue.js" charset="utf-8"></script>
+</head>
+<body>
+    <div id="app">
+        <!--1直接拼接-->
+        <h2>{{firstName}} {{lastName}}</h2>
+        <!--2methods-->
+        <h2>{{getFullName()}}</h2>
+        <!--3computed-->
+        <h2>{{fullName}}</h2>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                firstName:"Crystal",
+                lastName:"Liu"
+            },
+            //computed:计算属性() !!!属性!本质是属性，这里像函数，就是实现了他的getter方法
+            //只调用一次，内存占用相对methods少
+            computed:{
+                fullName:function(){
+                    return this.firstName + " " +this.lastName;
+                }
+            },
+            methods:{
+                getFullName:function(){
+                    return this.firstName + " " +this.lastName;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

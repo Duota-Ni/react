@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <script src="../vue.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h2>总价为：{{totalPlice}}</h2>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                books: [
+                    { id: 100, name: '计算机网络', price: 90 },
+                    { id: 101, name: '图解HTTP', price: 78 },
+                    { id: 102, name: 'JavaScript学习指南', price: 34 },
+                    { id: 103, name: '深入浅出ES6', price: 76 },
+                ]
+            },
+            computed: {
+                totalPlice:function(){
+                    let result = 0;
+                    for (book of this.books){
+                        result += book.price
+                    }
+                    return result;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
