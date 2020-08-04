@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01mustache语法</title>
+    <script src="../vue.js" charset="utf-8"></script>
+</head>
+<body>
+    <div id="app">
+        <!--mustache即双花大括号{{}}，不仅仅可以写变量还可以写一些简单的表达式，如+-*\ -->
+        <h2>{{firstname+" "+lastname}}</h2>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                firstname:"Crystal",
+                lastname:"Liu"
+            }
+        })
+    </script>
+</body>
+</html>

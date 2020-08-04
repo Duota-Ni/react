@@ -10,3 +10,4 @@ Model数据绑定到View,x响应式，将Model的改变实时反应到Vi额外�
 DOM监听，发生事件改变对应的Data
 ![MVVM2](images/notesImages/MVVM2.png)
 
+//12插值操作未
