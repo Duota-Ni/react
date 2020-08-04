@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-bind对象语法</title>
+    <script src="../vue.js" charset="utf-8"></script>
+    <style>
+        .active{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h2  class="title" :class="['active','line']">{{message}}</h2>
+        <h2  class="title" :class="getClasses()">{{message}}</h2>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                message:"hello!",
+                active:'aaaaa',
+                line:'bbbbbb'
+            },
+            methods:{
+                btnClick:function(){
+                    this.isActive = !this.isActive
+                },
+                getClasses:function(){
+                    return [this.active,this.line]
+                }
+            }
+        })
+    </script>
+</body>
+</html>
