@@ -16,5 +16,11 @@ DOM监听，发生事件改变对应的Data
 用key=" "作标识
 
 ## v-show  
-
 ![v-show](images/notesImages/v-show.png)
+
+## 组件key的属性
+![key](images/notesImages/组件key的属性.png)  
+key一定要是**唯一性**的，不然没太大意义，不要绑定index,比如在插入的时候index会改变
+比如在列表中插入一个元素  
+[for添加key](main/07-循环遍历/03v-for添加key.html)
+![数组中插入元素](images/notesImages/数组插入key.png)
