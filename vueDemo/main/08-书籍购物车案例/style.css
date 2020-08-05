@@ -1,0 +1,13 @@
+table{
+    border: 1px solid #69cfff;
+}
+th{
+    background-color: #efefef;
+    border: 1px solid #69cfff;
+    padding: 0.3em;
+}
+td{
+    border: 1px solid hsl(199, 100%, 71%);
+    padding: 0.3em;
+    text-align: center;
+}
