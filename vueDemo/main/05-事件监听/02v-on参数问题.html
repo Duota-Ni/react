@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-on参数问题</title>
+    <script src="../vue.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!--1.事件调用的方法没有参数的情况-->
+        <button @click="btnClick1()">按钮1</button>
+        <button @click="btnClick1">按钮1</button>
+
+        <!--2.在事件定义是，写函数时！省略了小括号！，但是方法本身是需要一个参数的,
+        这个时候Vue会将浏览器生成的event事件对象作为参数传入到方法中-->
+        <button @click="btnClick2(123)">按钮2</button> <!--结果lalala 123-->
+        <button @click="btnClick2()">按钮2</button><!--结果lalala undefinrd-->
+        <button @click="btnClick2">按钮2</button><!--结果lalala-->
+
+        <!--3.方法定义时，我们需要event对象，同时又需要其他参数-->
+        <!--在调用方法，如何手动获取浏览器参数的event对象：$event-->
+        <button @click="btnClick3('456',$event)">按钮3</button>
+
+    </div>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                counter: 0
+            },
+            methods: {
+                btnClick1() {
+                    console.log('butClick');
+                },
+                btnClick2(abc) {
+                    console.log('lalala', abc);
+                },
+                btnClick3(abc,event) {
+                    console.log('lalala', abc,event);
+                },
+
+            }
+        })
+        //如果函数需要参数但是没有传入，那么函数等等形参为undefined
+        function test(params) {
+            console.log(params);
+        }
+        abc();
+    </script>
+</body>
+
+</html>
