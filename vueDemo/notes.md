@@ -10,4 +10,11 @@ Model数据绑定到View,x响应式，将Model的改变实时反应到Vi额外�
 DOM监听，发生事件改变对应的Data
 ![MVVM2](images/notesImages/MVVM2.png)
 
-//12插值操作未
+## 虚拟DOM
+案例为: [06登录案例](main/06-条件判断/04用户切换登录的案例.html)  
+![vdom](images/notesImages/虚拟DOM-key.png)  
+用key=" "作标识
+
+## v-show  
+
+![v-show](images/notesImages/v-show.png)

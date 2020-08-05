@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录的案例</title>
+    <script src="../vue.js" charset="utf-8"></script>
+</head>
+<body>
+    <!--这里input被复用了，参见notes.md-->
+    <div id="app">
+        <span v-if="isUser">
+            <label for="username">用户账号</label>
+            <input type="text" id="username" placeholder="用户账号"/>
+        </span>
+        <span v-else>
+            <label for="email">用户邮箱</label>
+            <input type="text" id="email" placeholder="用户邮箱"/>
+        </span>
+        <button @click="isUser = !isUser">切换类型</button>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                isUser:true
+            }
+        })
+    </script>
+</body>
+</html>

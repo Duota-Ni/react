@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <script src="../vue.js" charset="utf-8"></script>
+</head>
+<body>
+    <div id="app">
+        <!--一般用计算属性写不用v-else-if-->
+        <h2 v-if="score>=90">优秀</h2>
+        <h2 v-else-if="score>=80">良好</h2>
+        <h2 v-else-if="score>=60">及格</h2>
+        <h2 v-else>不及格</h2>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                score:99
+            }
+        })
+    </script>
+</body>
+</html>
