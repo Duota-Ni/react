@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <script src="../vue.js" charset="utf-8"></script>
+</head>
+<body>
+    <!--v-model双向绑定，即可通过控制台app.message = "lalla" 改变内容的同时
+    在表单直接修改也可以改变app.message的内容-->
+    <div id="app">
+        <input type="text" v-model="message"/>
+        <p>{{message}}</p>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                message:"hello!"
+            }
+        })
+    </script>
+</body>
+</html>

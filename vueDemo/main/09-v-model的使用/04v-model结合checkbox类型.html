@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <script src="../vue.js" charset="utf-8"></script>
+</head>
+<body>
+    <div id="app">
+        <!--1.checkbox单选框-->
+        <!-- <label for="agree">
+            <input type="checkbox" id="agree" v-model="isAgree"/>同意协议
+        </label>
+        <p>您的选择是：{{isAgree}}</p>
+        <button :disabled="!isAgree">下一步</button> -->
+
+        <!--2.checkbox多选框-->
+        <input type="checkbox" value="篮球" v-model="hobbies"/>篮球
+        <input type="checkbox" value="足球" v-model="hobbies"/>足球
+        <input type="checkbox" value="绘画" v-model="hobbies"/>绘画
+        <input type="checkbox" value="跳舞" v-model="hobbies"/>跳舞
+        <input type="checkbox" value="唱歌" v-model="hobbies"/>唱歌
+        <p>你的爱好是：{{hobbies}}</p>
+
+        <label v-for="item in originHobbies" :for="item">
+            <input type="checkbox" :value="item" :id="item" v-model="hobbies">{{item}}
+        </label>
+        
+    </div>
+
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                message:"hello!",
+                isAgree:false,//单选框对应的是boolean
+                hobbies:[],//多选框对应array
+                originHobbies:["篮球","足球","绘画","跳舞","乒乓球","唱歌","羽毛球"]
+            }
+        })
+    </script>
+</body>
+</html>

@@ -24,3 +24,10 @@ key一定要是**唯一性**的，不然没太大意义，不要绑定index,比�
 比如在列表中插入一个元素  
 [for添加key](main/07-循环遍历/03v-for添加key.html)
 ![数组中插入元素](images/notesImages/数组插入key.png)
+
+## v-model原理
+![v-model原理1](images/notesImages/v-model原理1.png)  
+![v-model原理2](images/notesImages/v-model原理2.png)
+
+## v-model修饰符
+![v-model修饰符](images/notesImages/v-model修饰符.png)
