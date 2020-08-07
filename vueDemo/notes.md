@@ -31,3 +31,10 @@ key一定要是**唯一性**的，不然没太大意义，不要绑定index,比�
 
 ## v-model修饰符
 ![v-model修饰符](images/notesImages/v-model修饰符.png)
+
+## 组件化
+![组件化](images/notesImages/组件化.png)
+vue的组件化  
+![vue组件化](images/notesImages/Vue组件化.png)
+注册组件步骤
+![注册组件](images/notesImages/注册组件.png)
