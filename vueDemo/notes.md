@@ -37,4 +37,13 @@ key一定要是**唯一性**的，不然没太大意义，不要绑定index,比�
 vue的组件化  
 ![vue组件化](images/notesImages/Vue组件化.png)
 注册组件步骤
-![注册组件](images/notesImages/注册组件.png)
+![注册组件](images/notesImages/注册组件.png)  
+### 组件的data必须是函数
+![组件数据](images/notesImages/组件数据.png)
+### 父子组件间的通信  
+**注意：Vue实例本身可以看作一个组件，并且是root组件，即顶层父组件**  
+![父子组件通信](images/notesImages/父子组件间的通信.png)  
+#### 父传子  
+props可以是数组或者对象
+组件props数据验证
+![组件props数据验证](images/notesImages/组件props数据验证.png)
