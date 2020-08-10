@@ -46,4 +46,7 @@ vue的组件化
 #### 父传子  
 props可以是数组或者对象
 组件props数据验证
-![组件props数据验证](images/notesImages/组件props数据验证.png)
+![组件props数据验证](images/notesImages/组件props数据验证.png)  
+#### 子传父  
+![组件子传父](images/notesImages/组件子传父.png)  
+![例子](images/notesImages/组件子传父例子.png)
