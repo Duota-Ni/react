@@ -2,65 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model</title>
-    <script src="../vue.js" charset="utf-8"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model</title>
+  <script src="../vue.js" charset="utf-8"></script>
 </head>
 
 <body>
-    <!--父组件模板-->
-    <div id="app">
-        <!--接收子组件发射的事件，在父组件创建函数-->
-        <cpn @itemclick="cpnClick"></cpn>
+  <!--父组件模板-->
+  <div id="app">
+    <!--接收子组件发射的事件，在父组件创建函数-->
+    <cpn @itemclick="cpnClick"></cpn>
+  </div>
+
+  <!--子组件模板-->
+  <template id="cpn">
+    <div>
+      <button v-for="item in categories" @click="btnClick(item)">{{item.name}}</button>
     </div>
-
-    <!--子组件模板-->
-    <template id="cpn">
-        <div>
-            <button v-for="item in categories" @click="btnClick(item)">{{item.name}}</button>
-        </div>
-    </template>
-    <!--不支持驼峰-->
-    <!--所有的cinfo不能改成cInfo-->
-    <script>
-        //1.子组件
-        const cpn = {
-            template: "#cpn",
-            data() {
-                return {
-                    categories: [
-                        { id: 'aaa', name: '热门推荐' },
-                        { id: 'bbb', name: '手机数码' },
-                        { id: 'ccc', name: '家用家电' },
-                        { id: 'ddd', name: '电脑办公' },
-                    ]
-                }
-            },
-            methods: {
-                btnClick(item) {
-                    //子组件发射事件,自定义事件
-                    this.$emit('itemclick',item)
-                }
-            }
+  </template>
+  <!--不支持驼峰-->
+  <!--所有的cinfo不能改成cInfo-->
+  <script>
+    //1.子组件
+    const cpn = {
+      template: "#cpn",
+      data() {
+        return {
+          categories: [
+            { id: 'aaa', name: '热门推荐' },
+            { id: 'bbb', name: '手机数码' },
+            { id: 'ccc', name: '家用家电' },
+            { id: 'ddd', name: '电脑办公' },
+          ]
         }
+      },
+      methods: {
+        btnClick(item) {
+          //子组件发射事件,自定义事件
+          this.$emit('itemclick', item)
+        }
+      }
+    }
 
-        //2.父组件
-        const app = new Vue({
-            el: "#app",
-            data: {
+    //2.父组件
+    const app = new Vue({
+      el: "#app",
+      data: {
 
-            },
-            components: {
-                cpn
-            },
-            methods: {
-                cpnClick(item) {
-                    console.log('cpnClick',item);
-                }
-            }
-        })
-    </script>
+      },
+      components: {
+        cpn
+      },
+      methods: {
+        cpnClick(item) {
+          console.log('cpnClick', item);
+        }
+      }
+    })
+  </script>
 </body>
 
 </html>

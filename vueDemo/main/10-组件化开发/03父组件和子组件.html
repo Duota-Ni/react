@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model</title>
-    <script src="../vue.js" charset="utf-8"></script>
-</head>
-<body>
-    <div id="app">
-        <cpn2></cpn2>
-        <!-- <cpn1></cpn1> -->
-    </div>
 
-    <script>
-        //1.创建组件构造器1
-         const cpnC1 = Vue.extend({
-            template:`
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model</title>
+  <script src="../vue.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div id="app">
+    <cpn2></cpn2>
+    <!-- <cpn1></cpn1> -->
+  </div>
+
+  <script>
+    //1.创建组件构造器1
+    const cpnC1 = Vue.extend({
+      template: `
             <div>
                 <h2>一、title</h2>
                 <p>lallalla</p>
                 <p>yeahyeahyeah</p>
             </div>
             `
-        })
+    })
 
-         //2.创建组件构造器2，其子组件为cpnC1,
-         //若不在下面app里再注册一次cpnC1，则cpnC1的作用域只能是cpnC2的作用域
-         //即子组件只能再父组件中使用
-         const cpnC2 = Vue.extend({
-            template:`
+    //2.创建组件构造器2，其子组件为cpnC1,
+    //若不在下面app里再注册一次cpnC1，则cpnC1的作用域只能是cpnC2的作用域
+    //即子组件只能再父组件中使用
+    const cpnC2 = Vue.extend({
+      template: `
             <div>
                 <h2>二、title</h2>
                 <p>lallalla</p>
@@ -36,23 +38,24 @@
                 <cpn1></cpn1>
             </div>
             `,
-            //渲染模板时先找自己的cpn1,然后再去全局组件里面找
-            components:{
-                cpn1:cpnC1
-            }
-        })
-    
-  
-        //root组件
-        const app = new Vue({
-            el:"#app",
-            data:{
-                message:"hello!"
-            },
-            components:{
-                cpn2:cpnC2
-            }
-        })
-    </script>
+      //渲染模板时先找自己的cpn1,然后再去全局组件里面找
+      components: {
+        cpn1: cpnC1
+      }
+    })
+
+
+    //root组件
+    const app = new Vue({
+      el: "#app",
+      data: {
+        message: "hello!"
+      },
+      components: {
+        cpn2: cpnC2
+      }
+    })
+  </script>
 </body>
+
 </html>

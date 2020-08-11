@@ -49,4 +49,6 @@ props可以是数组或者对象
 ![组件props数据验证](images/notesImages/组件props数据验证.png)  
 #### 子传父  
 ![组件子传父](images/notesImages/组件子传父.png)  
-![例子](images/notesImages/组件子传父例子.png)
+![例子](images/notesImages/组件子传父例子.png)  
+### 父子组件的访问  
+![父子组件的访问](images/notesImages/父子组件的访问方式.png)

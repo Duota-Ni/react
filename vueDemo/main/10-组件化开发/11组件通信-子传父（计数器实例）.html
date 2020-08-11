@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model</title>
-    <script src="../vue.js" charset="utf-8"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model</title>
+  <script src="../vue.js" charset="utf-8"></script>
 </head>
+
 <body>
-    <div id="app">
-        <child-cpn @increment="changeTotal" @decrement="changeTotal"></child-cpn>
-        <p>点击次数：{{total}}</p>
+  <div id="app">
+    <child-cpn @increment="changeTotal" @decrement="changeTotal"></child-cpn>
+    <p>点击次数：{{total}}</p>
+  </div>
+
+  <template id="childCpn">
+    <div>
+      <button @click="increment">+1</button>
+      <button @click="decrement">-1</button>
     </div>
+  </template>
 
-    <template id="childCpn">
-        <div>
-            <button @click="increment">+1</button>
-            <button @click="decrement">-1</button>
-        </div>
-    </template>
-
-    <script>
-        const app = new Vue({
-            el:"#app",
-            data:{
-                total:0
-            },
-            methods:{
-                changeTotal(counter){
-                    this.total = counter;
-                }
-            },
-            components:{
-                'child-cpn':{
-                    template:'#childCpn',
-                    data(){
-                        return {
-                            counter:0
-                        }
-                    },
-                    methods:{
-                        increment(){
-                            this.counter++;
-                            this.$emit('increment',this.counter)
-                        },
-                        decrement(){
-                            this.counter--;
-                            this.$emit('decrement',this.counter)
-                        }
-                    }
-                }
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data: {
+        total: 0
+      },
+      methods: {
+        changeTotal(counter) {
+          this.total = counter;
+        }
+      },
+      components: {
+        'child-cpn': {
+          template: '#childCpn',
+          data() {
+            return {
+              counter: 0
             }
-        })
-    </script>
+          },
+          methods: {
+            increment() {
+              this.counter++;
+              this.$emit('increment', this.counter)
+            },
+            decrement() {
+              this.counter--;
+              this.$emit('decrement', this.counter)
+            }
+          }
+        }
+      }
+    })
+  </script>
 </body>
+
 </html>
