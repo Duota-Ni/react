@@ -38,8 +38,10 @@ vue的组件化
 ![vue组件化](images/notesImages/Vue组件化.png)
 注册组件步骤
 ![注册组件](images/notesImages/注册组件.png)  
+
 ### 组件的data必须是函数
 ![组件数据](images/notesImages/组件数据.png)
+
 ### 父子组件间的通信  
 **注意：Vue实例本身可以看作一个组件，并且是root组件，即顶层父组件**  
 ![父子组件通信](images/notesImages/父子组件间的通信.png)  
@@ -50,5 +52,14 @@ props可以是数组或者对象
 #### 子传父  
 ![组件子传父](images/notesImages/组件子传父.png)  
 ![例子](images/notesImages/组件子传父例子.png)  
+
 ### 父子组件的访问  
 ![父子组件的访问](images/notesImages/父子组件的访问方式.png)
+
+### 插槽slot
+![插槽1](images/notesImages/插槽slot.png)  
+![插槽2](images/notesImages/插槽slot2.png)  
+编译作用域
+![编译作用域](images/notesImages/编译作用域.png)
+![作用域插槽](images/notesImages/作用域插槽.png)
+
