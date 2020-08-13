@@ -63,3 +63,17 @@ props可以是数组或者对象
 ![编译作用域](images/notesImages/编译作用域.png)
 ![作用域插槽](images/notesImages/作用域插槽.png)
 
+## 模块化开发  
+![js原始问题](images/notesImages/模块化-js原始问题.png)  
+模块化-匿名函数解决冲突但不能导出
+![模块化-匿名函数解决冲突但不能导出](images/notesImages/模块化-匿名函数解决冲突但不能导出.png)  
+使用模块作为出口  
+![使用模块作为出口](images/notesImages/模块化-使用模块作为出口.png)  
+CommonJS(初步认识)  
+![CommonJS](images/notesImages/模块化-CommonJS.png)
+
+## Webpack
+![是什么](images/notesImages/webpack-是什么.png)  
+![模块化&打包](images/notesImages/webpack-前端模块化和打包概念.png)  
+![与grunt&gulp对比](images/notesImages/webpack-与grunt&gulp对比.png)  
+![与node&npm关系](images/notesImages/webpack-与node和npm的关系.png)
