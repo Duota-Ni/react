@@ -84,3 +84,8 @@ CommonJS(初步认识)
 ![package.json定义自启动](images/notesImages/webpack-package.json中定义启动.png) 
 ![安装](images/notesImages/webpack-安装.png)   
 ![局部安装](images/notesImages/webpack-局部安装.png)  
+### loader  
+#### css  
+![loader](images/notesImages/webpack-loader.png)
+#### less等
+![less](images/notesImages/webpack-less等其他文件.png)
