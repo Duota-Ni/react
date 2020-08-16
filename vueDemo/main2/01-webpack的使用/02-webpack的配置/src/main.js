@@ -15,3 +15,13 @@ require('./css/normal.css')
 
 //4.依赖less文件
 require('./css/special.less')
+
+//5.使用vuek开发
+import Vue from 'vue'
+
+const app = new Vue({
+  el:'#app',
+  data:{
+    message:'Hello Webpack!'
+  }
+})

@@ -89,3 +89,7 @@ CommonJS(初步认识)
 ![loader](images/notesImages/webpack-loader.png)
 #### less等
 ![less](images/notesImages/webpack-less等其他文件.png)
+
+## Webpack Vue
+![webpack vue1](images/notesImages/webpack-Vue.png)
+![webpack vue2](images/notesImages/webpack-vue2.png)
