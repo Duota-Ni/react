@@ -90,10 +90,12 @@ CommonJS(初步认识)
 #### less等
 ![less](images/notesImages/webpack-less等其他文件.png)
 
-## Webpack Vue
+### Webpack Vue
 ![webpack vue1](images/notesImages/webpack-Vue.png)
 ![webpack vue2](images/notesImages/webpack-vue2.png)
 ![webpack vue3](images/notesImages/webpack-vue-el和template的关系.png)
 ![webpack vue4](images/notesImages/webpack-.vue文件封装.png)
+
+### Webpack plugins
 ![webpack vue5](images/notesImages/webpack-plugin插件.png)
 ![webpack vue6](images/notesImages/webpack-plugin%20html.png)
