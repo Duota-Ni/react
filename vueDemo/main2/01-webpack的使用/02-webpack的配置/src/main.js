@@ -1,11 +1,11 @@
 //1.Common.js模块化规范
-const {add,mul} = require('./js/mathUtils.js');
+const { add, mul } = require('./js/mathUtils.js');
 
-console.log(add(20,30));
-console.log(mul(20,30));
+console.log(add(20, 30));
+console.log(mul(20, 30));
 
 //2.ES6模块化规范
-import {name,age,height} from './js/info';
+import { name, age, height } from './js/info';
 console.log(name);
 console.log(age);
 console.log(height);
@@ -19,9 +19,13 @@ require('./css/special.less')
 //5.使用vuek开发
 import Vue from 'vue'
 
-const app = new Vue({
-  el:'#app',
-  data:{
-    message:'Hello Webpack!'
+//import App from './vue/app'
+ import App from './vue/App.vue'
+
+new Vue({
+  el: '#app',
+  template: '<App/>',
+  components: {
+    App
   }
 })
