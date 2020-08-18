@@ -99,3 +99,37 @@ CommonJS(初步认识)
 ### Webpack plugins
 ![webpack vue5](images/notesImages/webpack-plugin插件.png)
 ![webpack vue6](images/notesImages/webpack-plugin%20html.png)
+
+## Vue CLI
+![VUE CLI](images/notesImages/Vue%20Cli.png)
+![VUE CLI Node](images/notesImages/Vue-CLI-Node.png)
+![VUE CLI 安装](images/notesImages/Vue-CLI安装.png)
+这里我使用了淘宝镜像 cnpm  
+cli3.x 创建项目：vue create 项目名
+![Vue-CLI2详解](images/notesImages/Vue-CLI2详解.png)  
+node运行原理，直接**node js文件** 可不通过浏览器运行js文件
+![node运行原理](images/notesImages/node运行原理.png)
+![somenotes](images/notesImages/somenotes.png)
+
+## runtime-complier runtime-only  
+![vue程序运行过程](images/notesImages/vue程序运行过程.png)  
+主要看src->main.js   
+### 1.runtime-complier  
+执行过程：template -> ast -> render -> vdom -> UI   
+```new Vue({
+  el: '#app',
+  components: { App },
+  template: '<App/>'
+})
+```
+### 2.runtime-only  
+执行过程： render -> vdom -> UI  
+优点：1.性能更高 2.代码量更少  
+.vue文件中的template是由vue-template-compiler处理的  
+```new Vue({
+  el: '#app',
+  render: h => h(App)
+})
+```
+
+
