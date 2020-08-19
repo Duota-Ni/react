@@ -132,4 +132,12 @@ node运行原理，直接**node js文件** 可不通过浏览器运行js文件
 })
 ```
 
+## npm run build 和 npm run dev实现过程  
+![npm run build](images/notesImages/npm%20run%20build.png)
+![npm run dev](images/notesImages/npm%20run%20dev.png)
 
+## webpack.base.conf.js起别名
+![webpack.base.conf.js起别名](images/notesImages/webpack.base.conf.js起别名.png)
+
+## CLI3
+![CLI3 认识](images/notesImages/CLI3-认识.png)
