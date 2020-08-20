@@ -184,3 +184,42 @@ const obj = {
 
 obj.aaa();
 ```
+
+## router
+![router是什么](images/notesImages/router-是什么.png)
+### 前端渲染，后端渲染
+#### 后端渲染  
+![后端路由](images/notesImages/router-后端路由.png) 
+![后端渲染](images/notesImages/后端渲染.png)   
+#### 前后的分离
+前后的分离中静态资源服务器放置了好几套html+css+js 每个url对应各自的html+css+js  
+![前后端分离2](images/notesImages/前后端分离阶段2.png)
+![前后端分离](images/notesImages/前后端分离阶段.png)
+#### SPA与前端路由   
+SPA单页面富应用阶段 
+![SPA单页面富应用阶段](images/notesImages/SPA单页面富应用阶段.png)   
+前端路由和SPA  
+![前端路由和SPA](images/notesImages/前端路由和SPA.png)  
+前端路由和组件的关系  
+![前端路由和组件的关系](images/notesImages/前端路由和组件的关系.png)
+##### 如何实现更改url而不向服务器请求刷新  
+![URL的hash](images/notesImages/URL的hash.png)  
+![HTML5的history模式：pushState](images/notesImages/HTML5的history模式：pushState.png
+![HTML5的history模式：replaceState](images/notesImages/HTML5的history模式：replaceState.png)
+![HTML5的history模式：go](images/notesImages/HTML5的history模式：go.png)
+
+## vue-router  
+![vue-router-认识](images/notesImages/vue-router-认识.png)  
+vue-router安装配置，也可以直接脚手架安装  
+![vue-router安装配置](images/notesImages/vue-router-安装配置.png)
+![vue-router link/view](images/notesImages/vue-router-router-link-view.png)
+默认是hash模式，可以修改为HTML5的history模式   
+![vue-router-HTML5的history模式](images/notesImages/vue-router-HTML5的history模式.png)
+![vue-router-router-link补充](images/notesImages/vue-router-router-link补充.png)
+![vue-router-router-link直接全部修改linkActiveClass](images/notesImages/vue-router-router-link直接全部修改linkActiveClass.png)
+![vue-router打包文件解析](images/notesImages/vue-router打包文件解析.png)
+![vue-router懒加载认识](images/notesImages/vue-router-懒加载认识.png)
+![vue-router懒加载结果](images/notesImages/vue-router-懒加载结果.png)
+![vue-router-懒加载的方式](images/notesImages/vue-router-懒加载的方式.png)
+![vue-router路由嵌套](images/notesImages/vue-router-路由嵌套.png)
+![vue-router传递参数的方式](images/notesImages/vue-router-传递参数的方式.png)
