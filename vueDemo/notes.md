@@ -141,3 +141,46 @@ node运行原理，直接**node js文件** 可不通过浏览器运行js文件
 
 ## CLI3
 ![CLI3 认识](images/notesImages/CLI3-认识.png)
+![CLI3 目录](images/notesImages/CLI3-目录.png)
+![CLI3 配置1](images/notesImages/CLI3-配置去哪里了.png)
+![CLI3 配置2](images/notesImage/../notesImages/CLI3-自定义配置.png)
+
+## 箭头函数和this  
+//问：箭头函数中this的值是如何查找的呢？  
+//答：向外层作用域一层层地查找this,直到找到有this的定义  
+```
+const obj = {
+  aaa() {
+    setTimeout(function () {
+      //1
+      console.log(this);//window
+      //2
+      setTimeout(function () {
+        console.log(this);//window
+      })
+      //3
+      setTimeout(() => {
+        console.log(this);//window
+      })
+    })
+    //4
+    console.log(this);//object
+    setTimeout(() => {
+      //5
+      console.log(this);//object
+      //6
+      setTimeout(function () {
+        console.log(this);//window
+      })
+    })
+
+    //7
+    setTimeout(() => {
+      console.log(this);//object
+    })
+
+  }
+}
+
+obj.aaa();
+```
