@@ -10,7 +10,9 @@
   <router-link :to="{path:'/profile',query:{name:'zoro',age:21,height:1.81}}" >档案</router-link> -->
   <button @click="toUser">用户</button>
   <button @click="toProfile">档案</button>
-  <router-view/>
+  <keep-alive exclude="Profile,User">
+    <router-view/>
+  </keep-alive>
   </div>
 </template>
 
@@ -27,13 +29,13 @@ export default {
       //通过代码方式修改路由 vue-router
       this.$router.push('/home')
       // this.$router.replace('/home');
-      console.log("gotohome");
+      // console.log("gotohome");
     },
     toAbout(){
       //通过代码方式修改路由 vue-router
       this.$router.push('/about')
       // this.$router.replace('/about')
-      console.log("gotoabout");
+      // console.log("gotoabout");
     },
     toUser(){
       this.$router.push('/user/' + this.userId)

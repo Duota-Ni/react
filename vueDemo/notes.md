@@ -226,3 +226,4 @@ vue-router安装配置，也可以直接脚手架安装
 ![vue-router-懒加载的方式](images/notesImages/vue-router-懒加载的方式.png)
 ![vue-router路由嵌套](images/notesImages/vue-router-路由嵌套.png)
 ![vue-router传递参数的方式](images/notesImages/vue-router-传递参数的方式.png)
+![vue-router-keep-alive](images/notesImages/vue-router-keep-alive.png)

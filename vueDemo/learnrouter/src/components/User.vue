@@ -22,7 +22,13 @@ export default {
       console.log(this.$router);
       console.log(this.$route);
     }
-  }
+  },
+   created(){
+    console.log('User created');
+  },
+  destroyed(){
+    console.log('User destroyed');
+  },
 }
 </script>
 

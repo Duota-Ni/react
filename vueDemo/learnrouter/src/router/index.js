@@ -28,10 +28,10 @@ const routes = [
     path: '/home',
     component: Home,
     children: [
-      {
-        path: '',
-        redirect: 'news'
-      },
+      // {
+      //   path: '',
+      //   redirect: 'news'
+      // },
       {
         path: 'news',
         component: HomeNews
@@ -50,6 +50,10 @@ const routes = [
     component: About,
     meta:{
       title:'关于'
+    },
+    beforeEnter:(to,from,next) => {
+      // console.log("about beforeEnter");
+      next()
     }
   },
   {
@@ -75,11 +79,21 @@ const router = new VueRouter({
   mode: 'history'
 })
 
+//前置守卫（guard)，在路由跳转之前执行
+//钩子一般表示回调的意思
 router.beforeEach((to,from,next) => {
   //从from挑转到to
   document.title = to.matched[0].meta.title
+  // console.log("to");
+  // console.log("++++");
+  //beforeEach必须要有next()
   next()
 })
+
+//后置钩子，在路由跳转后执行
+// router.afterEach((to,from) => {
+//   console.log("----");
+// })
 
 //3.将router对象传到Vue实例中
 export default router
