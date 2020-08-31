@@ -227,3 +227,23 @@ vue-router安装配置，也可以直接脚手架安装
 ![vue-router路由嵌套](images/notesImages/vue-router-路由嵌套.png)
 ![vue-router传递参数的方式](images/notesImages/vue-router-传递参数的方式.png)
 ![vue-router-keep-alive](images/notesImages/vue-router-keep-alive.png)
+
+## Vuex  
+![vuex-是什么](images/notesImages/Vuex-是什么.png)
+![vuex-是什么](images/notesImages/Vuex-是什么2.png)
+![vuex-是什么](images/notesImages/Vuex-管理什么状态.png)
+![vuex-多界面状态管理](images/notesImages/Vuex-多界面状态管理.png)
+![vuex-状态管理图](images/notesImages/Vuex-状态管理图例.png)  
+### 几个核心概念  
+![vuex-单一状态树](images/notesImages/Vuex-单一状态树.png)
+![vuex-getters的基本使用](images/notesImages/Vuex-getters的基本使用.png)
+同时，getter还可以传参数  
+#### Mutations  
+![Vuex-Mutation状态更新](images/notesImages/Vuex-Mutation状态更新.png)
+![Vuex-Mutation传递参数](images/notesImages/Vuex-Mutation传递参数.png)
+![Vuex-Mutation提交风格](images/notesImages/Vuex-Mutation提交风格.png)
+![Vuex-Mutation响应规则](images/notesImages/Vuex-Mutation响应规则.png)
+![Vuex-Mutation常量类型](images/notesImages/Vuex-Mutation常量类型.png)
+![Vuex-Mutation同步函数](images/notesImages/Vuex-Mutation同步函数.png)
+#### Module  
+![Vuex-Module](images/notesImages/Vuex-Module.png)
