@@ -241,9 +241,17 @@ vue-router安装配置，也可以直接脚手架安装
 #### Mutations  
 ![Vuex-Mutation状态更新](images/notesImages/Vuex-Mutation状态更新.png)
 ![Vuex-Mutation传递参数](images/notesImages/Vuex-Mutation传递参数.png)
-![Vuex-Mutation提交风格](images/notesImages/Vuex-Mutation提交风格.png)
+![Vuex-Mutation提交风格](images/notesImages/Vuex-Mutation的提交风格.png)
 ![Vuex-Mutation响应规则](images/notesImages/Vuex-Mutation响应规则.png)
 ![Vuex-Mutation常量类型](images/notesImages/Vuex-Mutation常量类型.png)
 ![Vuex-Mutation同步函数](images/notesImages/Vuex-Mutation同步函数.png)
 #### Module  
 ![Vuex-Module](images/notesImages/Vuex-Module.png)
+
+## jsonp
+![jsonp](images/notesImages/jsonp.png)
+![jsonp例子](images/notesImages/jsonp-例子.png)
+
+## axios  
+![网络模块选择](images/notesImages/axios-网络模块的选择.png)
+![axiox-介绍](images/notesImag
