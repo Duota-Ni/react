@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./better-scroll1.js"></script>
+  </head>
+  <style>
+    .wrapper {
+      height: 200px;
+      background: skyblue;
+      overflow: hidden;
+    }
+  </style>
+
+  <body>
+    <div>
+      <div class="wrapper">
+        <ul>
+          <li>我是第几1</li>
+      			、、、、、
+          <li>我是第几100</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      // 默认情况下， BScroll 是不可以实时的监听滚动位置
+      // probe 侦测
+      // 0, 1 都是不侦测实时的位置
+      // 2 ：在手指滚动的过程中侦测，手指离开后的惯性滚动过程不侦测
+      // 3： 在只要是滚动，都侦测
+      const bscroll = new BScroll(document.querySelector('.wrapper'), {
+        probeType: 3,
+        click: true, // 设为 true 表示可以在的 div 里面 实现点击事件
+        pullUpLoad: true // 表示上拉加载更多
+      })
+
+      // 监听位置
+      // bscroll.on('scroll', (position) => {
+      //   console.log(position)
+      // })
+
+      // 上拉加载更多
+      bscroll.on('pullingUp', () => {
+        console.log('上拉加载更多')
+        // 发送网络请求，请求更多的数据
+
+        // 等数据请求完毕，并且将新的数据展示出来后
+        setTimeout(() => {
+          bscroll.finishPullUp()
+        }, 2000)
+
+      })
+
+    </script>
+  </body>
+
+</html>
