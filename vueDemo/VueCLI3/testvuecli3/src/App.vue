@@ -1,17 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <render></render>
+    <render1></render1>
+    <render2 tag="h1"></render2>
+    <render3 tag="ul"></render3>
+    <render4></render4>
+    <!-- <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
+import Render from './components/Render.vue'
+import Render1 from './components/Render1.vue'
+import Render2 from './components/Render2.vue'
+import Render3 from './components/Render3.vue'
+import Render4 from './components/Render4.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Render,
+    Render1,
+    Render2,
+    Render3,
+    Render4
   }
 }
 </script>
