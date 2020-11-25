@@ -59,3 +59,14 @@ CompB.vue
   }
 </script>
 ```
+
+### v-loading 
+[！示例](https://coffcer.github.io/vue-loading/ ) 
+```js
+//用法1
+v-loading="loading"
+
+//用法2
+v-loading="loading"
+:loading-options="{ text: 'custom text ...' }"
+```
