@@ -254,4 +254,5 @@ vue-router安装配置，也可以直接脚手架安装
 
 ## axios  
 ![网络模块选择](images/notesImages/axios-网络模块的选择.png)
-![axiox-介绍](images/notesImag
+![axiox-介绍](images/notesImages/axios-介绍.png)
+![axios-请求方式](images/notesImages/axios-请求方式.png)
