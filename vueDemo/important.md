@@ -70,3 +70,14 @@ v-loading="loading"
 v-loading="loading"
 :loading-options="{ text: 'custom text ...' }"
 ```
+
+### vuex
+状态管理，即可以跨路径去调用一些方法，如
+```js
+ // 打开弹窗
+      this.$store.dispatch(
+        'dialogManager/openDialog',
+        key
+      )
+```
+this.$store.dispatch这个方法可以调用vuex/modules/'dialogManager下的方法
