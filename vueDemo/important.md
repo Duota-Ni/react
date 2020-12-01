@@ -60,7 +60,10 @@ CompB.vue
 </script>
 ```
 
-### v-loading 
+### 3.v-loading 
+加载时候的小圈圈
+- 第一种是指Element-UI的v-loading指令
+- 第二种是指v-loading官网的这个
 [！示例](https://coffcer.github.io/vue-loading/ ) 
 ```js
 //用法1
@@ -71,7 +74,7 @@ v-loading="loading"
 :loading-options="{ text: 'custom text ...' }"
 ```
 
-### vuex
+### 4.vuex
 状态管理，即可以跨路径去调用一些方法，如
 ```js
  // 打开弹窗
