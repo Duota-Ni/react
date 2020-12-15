@@ -1,3 +1,7 @@
+//actions处理异步 ,看图例！
+//可以调用 context.commit 提交一个!! mutation !!，
+//或者通过 context.state 和 context.getters 来获取 state 和 getters
+
 export default {
   //context:上下文
   // aUpdateInfola(context,payload) {

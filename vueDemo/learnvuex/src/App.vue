@@ -61,9 +61,11 @@ export default {
   // },
   methods: {
     addition() {
+      //通过mutation更新状态
       this.$store.commit(INCREMENT);
     },
     subtraction() {
+      //通过mutation更新状态
       this.$store.commit("decrement");
     },
     addCount(count) {

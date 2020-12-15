@@ -84,3 +84,8 @@ v-loading="loading"
       )
 ```
 this.$store.dispatch这个方法可以调用vuex/modules/'dialogManager下的方法
+
+### 5.computed
+Props，methods,data和computed的初始化都是在beforeCreated和created之间完成的。https://segmentfault.com/q/1010000010364198
+
+初始化data在初始化computed之前 https://www.pianshen.com/article/73611605491/

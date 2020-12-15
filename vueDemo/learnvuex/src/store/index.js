@@ -9,6 +9,7 @@ import moduleA from './modules/moduleA';
 //1.安装插件
 Vue.use(Vuex)
 
+//写入状态 单一状态树
 const state = {
   counter: 10000,
   students: [
@@ -30,9 +31,10 @@ const store = new Vuex.Store({
   mutations,
   actions,
   getters,
-    modules: {
-      a:moduleA
-    }
+  modules: {
+    a:moduleA
+  }
   })
 
+//在根实例main.js中被调用
 export default store
