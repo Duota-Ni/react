@@ -49,4 +49,8 @@ nodejs内置模块有：Buffer,C/C++Addons,ChildProcess,Cluster,Console，Cryoto
 ## 10buffer
 [buffer.js](buffer.js)
 
-# 11stream流
+## 11stream流
+[stream.js](stream.js)
+
+## 12
+[require.js](require/index.html)
