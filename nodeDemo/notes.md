@@ -39,5 +39,14 @@ require('someModule')获取路径可以是从该文件父目录的node_modules�
 加`-g`就会安装在npm root -g的目录中（表示全局安装）  
 
 ## 07fs文件操作 
+[fs.js](./fs.js)
 内置模块不需要安装，外置模块需要安装   
 nodejs内置模块有：Buffer,C/C++Addons,ChildProcess,Cluster,Console，Cryoto,Debugger,DNS,Domain,Errors,Events,Flie System,Globals,HTTP,HTTPS,Modules,Net,OS,Path,Process,P unycode,Query Strings,Readline,REPL,Stream,String De coder,Timers,TSL/SSL,TTY,UDP/Datagram,URL,Utitles,V8,VM,ZLIB
+
+## 08目录操作 09删除非空目录
+[fileSystem.js](fileSystem.js)
+
+## 10buffer
+[buffer.js](buffer.js)
+
+# 11stream流
