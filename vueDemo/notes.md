@@ -1,4 +1,5 @@
 # 关于Vue的笔记（针对本人的理解点和重难点）  
+> 主要是参考coderwhy老师的vue视频教程
 
 vue的数据绑定跟微信小程序有点像  
 指令带有前缀 v-  
@@ -234,10 +235,12 @@ vue-router安装配置，也可以直接脚手架安装
 ![vuex-是什么](images/notesImages/Vuex-管理什么状态.png)
 ![vuex-多界面状态管理](images/notesImages/Vuex-多界面状态管理.png)
 ![vuex-状态管理图](images/notesImages/Vuex-状态管理图例.png)  
+
 ### 几个核心概念  
 ![vuex-单一状态树](images/notesImages/Vuex-单一状态树.png)
 ![vuex-getters的基本使用](images/notesImages/Vuex-getters的基本使用.png)
 同时，getter还可以传参数  
+
 #### Mutations  
 ![Vuex-Mutation状态更新](images/notesImages/Vuex-Mutation状态更新.png)
 ![Vuex-Mutation传递参数](images/notesImages/Vuex-Mutation传递参数.png)
@@ -245,6 +248,12 @@ vue-router安装配置，也可以直接脚手架安装
 ![Vuex-Mutation响应规则](images/notesImages/Vuex-Mutation响应规则.png)
 ![Vuex-Mutation常量类型](images/notesImages/Vuex-Mutation常量类型.png)
 ![Vuex-Mutation同步函数](images/notesImages/Vuex-Mutation同步函数.png)
+
+#### Action
+Action 提交的是 mutation，而不是直接变更状态。
+Action 可以包含任意异步操作。
+看官网和文件[action.js](learnvuex/src/store/actions.js)
+
 #### Module  
 ![Vuex-Module](images/notesImages/Vuex-Module.png)
 
@@ -254,4 +263,5 @@ vue-router安装配置，也可以直接脚手架安装
 
 ## axios  
 ![网络模块选择](images/notesImages/axios-网络模块的选择.png)
-![axiox-介绍](images/notesImag
+![axiox-介绍](images/notesImages/axios-介绍.png)
+![axios-请求方式](images/notesImages/axios-请求方式.png)
