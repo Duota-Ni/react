@@ -37,6 +37,7 @@ require('someModule')获取路径可以是从该文件父目录的node_modules�
 最终的根路径为：npm root -g 中的路径,比如现在这里的是C:\Program Files\nodejs\node_global\node_modules   
 默认情况下不加-g会安装到当前目录的node_modules里面（表示局部安装）    
 加`-g`就会安装在npm root -g的目录中（表示全局安装）  
+node_modules向上查找
 
 ## 07fs文件操作 
 [fs.js](./fs.js)
@@ -53,4 +54,19 @@ nodejs内置模块有：Buffer,C/C++Addons,ChildProcess,Cluster,Console，Cryoto
 [stream.js](stream.js)
 
 ## 12
-[require.js](require/index.html)
+1. require.js
+[require.js](require/index.html)  
+2. command.js module.exports 和 exports
+exports是module.exports的应用
+```js
+module.exports = {
+  name: 'crystal'
+  age: '30'
+}
+exports.name = 'crystal'
+exports.age = '30'
+```
+3. yarn
+4. nvm：管理node版本
+5. [创建服务器](server/index.js)
+

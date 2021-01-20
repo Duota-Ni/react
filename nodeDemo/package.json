@@ -4,6 +4,7 @@
   "description": "",
   "main": "http.js",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
     "jquery": "^3.5.1"
   },
   "devDependencies": {},
