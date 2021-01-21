@@ -70,3 +70,5 @@ exports.age = '30'
 4. nvm：管理node版本
 5. [创建服务器](server/index.js)
 
+## 13 pug模板引擎
+
