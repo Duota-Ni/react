@@ -28,7 +28,10 @@
             template: '<li>{{todo.text}}</li>'
         })
         let app7 = new Vue({
+          // 挂载方法1：使用el直接挂载
             el: '#app7',
+            // 如果提供了 el，且又没有提供template，那么会自动把el的innerHTML作为template
+            // template: `<div>哈哈哈</div>`,
             data: {
                 groceryList: [
                     { id: 0, text: '蔬菜' },
@@ -37,6 +40,9 @@
                 ]
             }
         })
+
+        // 挂载方法2：使用vm.$mount()延迟挂载
+        // app7.$mount("#app7")
     </script>
 </body>
 

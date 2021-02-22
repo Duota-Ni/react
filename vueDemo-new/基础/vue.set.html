@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../vue.js" charset="utf-8"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <h2>{{user.name}}</h2>
+    <h2>{{user.age}}</h2>
+  </div>
+</body>
+<script>
+//   Vue2 通过 `Object.defineProperty` 监听拦截中存在一些问题
+// - 属性新增属性-->使用set方法才可以拦截**新增属性**
+// - 数组方法：push、pop、shift、unshift、splice、sort、reverse-->在vue中这些方法被重写了所以能够使用然后被监听到
+// - 数组新增值：[]
+// - 数组 length 属性
+// 以上的操作中并不会触发监听拦截
+// 使用set方法才可以拦截**新增属性**
+
+let app = new Vue({
+  el: "#app",
+  data: {
+    user: {
+      name: "杨洋"
+    }
+  }
+})
+
+
+</script>
+</html>
